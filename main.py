@@ -38,14 +38,11 @@ def process_and_upload():
     # Get today's date
     today = datetime.datetime.now().strftime("%Y-%m-%d")
 
-    # Path to your folder where the images are stored
+    # Path to data folder where data will be stored
     image_folder = "/Users/egemenerin/Documents/Data"
 
     # Extract screen time data from images
     extracted_data = extract_screentime_data(image_folder)
-
-    # Example: Format the extracted data into a list for Google Sheets upload
-    # You can customize the processing based on the structure of your data
     google_sheet_data = [today] + extracted_data
 
     # Upload the data to Google Sheets
