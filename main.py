@@ -39,7 +39,7 @@ def process_and_upload():
     today = datetime.datetime.now().strftime("%Y-%m-%d")
 
     # Path to your folder where the images are stored
-    image_folder = "path_to_your_images_folder"
+    image_folder = "/Users/egemenerin/Documents/Data"
 
     # Extract screen time data from images
     extracted_data = extract_screentime_data(image_folder)
